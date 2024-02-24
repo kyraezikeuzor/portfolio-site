@@ -1,0 +1,16 @@
+[
+    {
+        "name":"Compute the Future Foundation Website",
+        "description":"The optimized dark theme for web development.",
+        "src":"/portfolio-img2.png",
+        "stack":["ReactJS","NextJS","TypeScript","Vanilla CSS"],
+        "url":"computefutures.org"
+    },
+    {
+        "name":"Omelora Website",
+        "description":"The optimized dark theme for web development.",
+        "src":"/portfolio-img2.png",
+        "stack":["ReactJS","NextJS","TypeScript","Vanilla CSS"],
+        "url":"omelora.org"
+    }
+]

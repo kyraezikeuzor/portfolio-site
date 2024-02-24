@@ -1,0 +1,23 @@
+[
+    {
+        "name":"ScholarVine",
+        "description":"The optimized dark theme for web development.",
+        "src":"/portfolio-img2.png",
+        "stack":["ReactJS","NextJS","TypeScript","TailwindCSS"],
+        "url":"scholarvine.org"
+    },
+    {
+        "name":"CalendarApp",
+        "description":"The optimized dark theme for web development.",
+        "src":"/portfolio-img2.png",
+        "stack":["ReactJS","NextJS","TypeScript","TailwindCSS"],
+        "url":"calendarapp.org"
+    },
+    {
+        "name":"SearchMoji",
+        "description":"The optimized dark theme for web development.",
+        "src":"/portfolio-img2.png",
+        "stack":["HTML","Vanilla CSS","JavaScript"],
+        "url":"scholarvine.org"
+    }
+]
