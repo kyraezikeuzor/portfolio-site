@@ -18,10 +18,9 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-20 px-[5vw] py-[15vh] ">
       <header className='flex flex-col gap-5 md:mx-[10vw]'>
-        <h1 className='tracking-tighter'>Hi! I'm Kyra Ezikeuzor, a student and developer.</h1>
+        <h1 className='tracking-tighter'>Hi! I&apos;m Kyra Ezikeuzor, a student and developer.</h1>
         <p>
-        
-Hey there, I'm Kyra Ezikeuzor, a student and web developer. I got hooked on web design while tinkering with HTML and CSS, and since then, I've been passionate about creating engaging websites. I'm constantly learning and exploring new techniques to enhance user experiences. Let's collaborate and build something amazing!
+        Hey there, I&apos;m Kyra Ezikeuzor, a student and web developer. I got hooked on web design while tinkering with HTML and CSS, and since then, I&apos;ve been passionate about creating engaging websites. I&apos;m constantly learning and exploring new techniques to enhance user experiences. Let&apos;s collaborate and build something amazing!
         </p>
         <div className='flex flex-row gap-3 items-center'>
           <Button path="https://github.com/kyraezikeuzor">View my Github <Icon icon="Github" size="sm" color="white"/> <Icon icon="ArrowTopRight" size="sm" color="white"/></Button>
@@ -35,7 +34,7 @@ Hey there, I'm Kyra Ezikeuzor, a student and web developer. I got hooked on web 
             <li className='w-full flex flex-row gap-5'>
               <span>•</span>
               <p>
-              Since childhood, I've been fascinated by the diverse landscape of the web. Starting with basic HTML and CSS, I was drawn to the endless possibilities of design and functionality that web development offers.
+              Since childhood, I&apos;ve been fascinated by the diverse landscape of the web. Starting with basic HTML and CSS, I was drawn to the endless possibilities of design and functionality that web development offers.
               </p>
             </li>
             <li className='flex flex-row gap-5'>
@@ -47,7 +46,7 @@ Hey there, I'm Kyra Ezikeuzor, a student and web developer. I got hooked on web 
             <li className='flex flex-row gap-5'>
               <span>•</span>
               <p>
-              With each project, I find myself eager to learn more. Whether it's diving into new programming languages or staying updated on the latest design trends, I thrive on the constant evolution of the web development field.
+              With each project, I find myself eager to learn more. Whether it&apos;s diving into new programming languages or staying updated on the latest design trends, I thrive on the constant evolution of the web development field.
               </p>
             </li>
           </ul>
@@ -60,7 +59,7 @@ Hey there, I'm Kyra Ezikeuzor, a student and web developer. I got hooked on web 
         <h2 className='tracking-tighter'>Tech Stack & Skills</h2>
         <div className='flex flex-row flex-wrap gap-2'>
           {TECHSTACK.map((item,index)=>(
-            <div className='flex flex-col gap-2 items-center rounded-2xl border border-[--clr-base-accent] px-4 py-4'>
+            <div key={index} className='flex flex-col gap-2 items-center rounded-2xl border border-[--clr-base-accent] px-4 py-4'>
               <img src={item.src} className='w-auto h-16'/>
               <div className='font-medium'>
                 {item.name}
@@ -84,6 +83,7 @@ Hey there, I'm Kyra Ezikeuzor, a student and web developer. I got hooked on web 
             <div className='flex flex-col gap-2'>
               {APPS.map((item,index)=>(
                 <PortfolioCard
+                key={index}
                 name={item.name}
                 description={item.description}
                 src={item.src}
@@ -92,7 +92,6 @@ Hey there, I'm Kyra Ezikeuzor, a student and web developer. I got hooked on web 
               ))}
             </div>
         </div>
-        
 
       </section>
 

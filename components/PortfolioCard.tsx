@@ -25,7 +25,7 @@ const PortfolioCard = ({name,description,src,stack,url}:PortfolioCardProps) => {
                 </p>
                 <div className='flex flex-row gap-1 flex-wrap items-center'>
                     {stack.map((tag,index)=>(
-                    <span className='bg-[--clr-grey-light] border border-[--clr-base-accent] rounded-xl px-2 text-sm'>
+                    <span key={index} className='bg-[--clr-grey-light] border border-[--clr-base-accent] rounded-xl px-2 text-sm'>
                         {tag}
                     </span>
                     ))}

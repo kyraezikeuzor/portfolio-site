@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default function() {
+export default function HireMe() {
 
     return (
         <main className="flex flex-col gap-20 px-[5vw] py-[15vh] ">
