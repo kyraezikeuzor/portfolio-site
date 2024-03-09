@@ -17,10 +17,10 @@ export function getBool(bool:boolean) {
 }
   
   
-export function handleViewChange(componentName, setComponent, componentList) {
+export function handleViewChange(componentName:any, setComponent:any, componentList:any) {
   for (let i = 0; i < componentList.length; i++) {
     if (componentList[i].name == componentName) {
-      return setComponent(componentList[i].component);
+      return setComponent(componentList[i]);
     }
   }
 }
