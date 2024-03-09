@@ -4,20 +4,27 @@
         "description":"The optimized dark theme for web development.",
         "src":"/portfolio-img2.png",
         "stack":["ReactJS","NextJS","TypeScript","TailwindCSS"],
-        "url":"scholarvine.org"
-    },
-    {
-        "name":"CalendarApp",
-        "description":"The optimized dark theme for web development.",
-        "src":"/portfolio-img2.png",
-        "stack":["ReactJS","NextJS","TypeScript","TailwindCSS"],
-        "url":"calendarapp.org"
+        "url":"https://scholar-vine.vercel.app/"
     },
     {
         "name":"SearchMoji",
         "description":"The optimized dark theme for web development.",
         "src":"/portfolio-img2.png",
         "stack":["HTML","Vanilla CSS","JavaScript"],
-        "url":"scholarvine.org"
+        "url":"https://kyraezikeuzor.github.io/SearchMoji/"
+    },
+    {
+        "name":"Compute the Future Foundation Website",
+        "description":"The optimized dark theme for web development.",
+        "src":"/portfolio-img2.png",
+        "stack":["ReactJS","NextJS","TypeScript","Vanilla CSS"],
+        "url":"https://www.computefutures.org/"
+    },
+    {
+        "name":"RecipeAI",
+        "description":"The optimized dark theme for web development.",
+        "src":"/portfolio-img2.png",
+        "stack":["ReactJS","NextJS","TypeScript","Vanilla CSS","NodeJS"],
+        "url":"https://recipe-ai-app.vercel.app/"
     }
 ]

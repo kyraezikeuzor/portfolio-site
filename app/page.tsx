@@ -7,7 +7,6 @@ import Icon from '@/components/Icon'
 import PortfolioCard from '@/components/PortfolioCard'
 
 import TECHSTACK from '@/assets/stack.json'
-import WEBSITES from '@/assets/websites.json'
 import APPS from '@/assets/apps.json'
 
 export const metadata: Metadata = {
@@ -21,10 +20,11 @@ export default function Home() {
       <header className='flex flex-col gap-5 md:mx-[10vw]'>
         <h1 className='tracking-tighter'>Hi! I'm Kyra Ezikeuzor, a student and developer.</h1>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor turpis libero, sit amet molestie massa ultrices ac. Mauris non gravida leo, vel blandit ipsum. Pellentesque pretium ullamcorper bibendum. 
+        
+Hey there, I'm Kyra Ezikeuzor, a student and web developer. I got hooked on web design while tinkering with HTML and CSS, and since then, I've been passionate about creating engaging websites. I'm constantly learning and exploring new techniques to enhance user experiences. Let's collaborate and build something amazing!
         </p>
         <div className='flex flex-row gap-3 items-center'>
-          <Button>About</Button>
+          <Button path="https://github.com/kyraezikeuzor">View my Github <Icon icon="Github" size="sm" color="white"/> <Icon icon="ArrowTopRight" size="sm" color="white"/></Button>
           <Link href='/hire-me' className='font-medium'>Hire Me ➝</Link>
         </div>
       </header>
@@ -35,19 +35,19 @@ export default function Home() {
             <li className='w-full flex flex-row gap-5'>
               <span>•</span>
               <p>
-                Ever since I was a kid, I have always been fascinated with how diverse the web was -- and that passion has led me to pursue web development.Ever since I was a kid, I have always been fascinated with how diverse the web was -- and that passion has led me to pursue web development.
+              Since childhood, I've been fascinated by the diverse landscape of the web. Starting with basic HTML and CSS, I was drawn to the endless possibilities of design and functionality that web development offers.
               </p>
             </li>
             <li className='flex flex-row gap-5'>
               <span>•</span>
               <p>
-                Ever since I was a kid, I have always been fascinated with how diverse the web was -- and that passion has led me to pursue web development.Ever since I was a kid, I have always been fascinated with how diverse the web was -- and that passion has led me to pursue web development.
+              Web development quickly became more than just a hobby—it became a creative outlet for me. I loved experimenting with different designs and layouts, seeing how small changes in code could make a big impact on the user experience.
               </p>
             </li>
             <li className='flex flex-row gap-5'>
               <span>•</span>
               <p>
-                Ever since I was a kid, I have always been fascinated with how diverse the web was -- and that passion has led me to pursue web development.Ever since I was a kid, I have always been fascinated with how diverse the web was -- and that passion has led me to pursue web development.
+              With each project, I find myself eager to learn more. Whether it's diving into new programming languages or staying updated on the latest design trends, I thrive on the constant evolution of the web development field.
               </p>
             </li>
           </ul>
@@ -74,14 +74,14 @@ export default function Home() {
         <span>
           <h2 className='tracking-tighter'>My Portfolio</h2>
           <div>
-            See A
+            
           </div>
         </span>
         
         
         <div className='flex flex-col gap-2'>
             {/*<h3 className='tracking-tighter'>Apps</h3>*/}
-            <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-2'>
+            <div className='flex flex-col gap-2'>
               {APPS.map((item,index)=>(
                 <PortfolioCard
                 name={item.name}
@@ -91,32 +91,6 @@ export default function Home() {
                 stack={item.stack}/>
               ))}
             </div>
-        </div>
-
-        <div className='flex flex-col gap-2'>
-            {/*<h3 className='tracking-tighter'>Websites</h3>*/}
-            <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-2'>
-              {WEBSITES.map((item,index)=>(
-                <div className='flex flex-col gap-4 rounded-lg border border-[--clr-base-accent] shadow-sm px-2 py-2'>
-                  <img src={item.src} className='w-full h-auto rounded-md shadow-sm border border-[--clr-base-accent]'/>
-
-                  <div className='flex flex-col gap-2 px-3 py-2'>
-                    <h4>{item.name}</h4>
-                    <p className='text-sm md:text-sm'>
-                      {item.description}
-                    </p>
-                    <div className='flex flex-row gap-1 flex-wrap items-center'>
-                      {item.stack.map((tag,index)=>(
-                        <span className='bg-[--clr-grey-light] border border-[--clr-base-accent] rounded-xl px-2 text-sm'>
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-              </div>
-              ))}
-            </div>
-
         </div>
         
 

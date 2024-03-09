@@ -26,24 +26,23 @@ const Icon = ({icon, color, onClick, className,size, button}: IconProps) => {
 
 
     return (
-        <svg 
-                onClick={onClick}
-                className={`${className} max-w-full ${button && 'p-[4px] rounded-full flex flex-col items-center hover:cursor-pointer hover:bg-[--clr-base-accent]  box-content'}`}
-                style={{ display: 'block', margin: 'auto' }}   
-                width={size === 'sm' ? '16' : size === 'lg' ? '26' : '24' } 
-                height={size === 'sm' ? '16' : size === 'lg' ? '26' : '24' }  
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox={`0 0 24 24`}
-                fill="none"
+<svg 
+            onClick={onClick}
+            className={`${className}  inline-block m-auto max-w-full ${button && 'p-[4px] rounded-full flex flex-col items-center hover:cursor-pointer hover:bg-[--clr-base-accent]  box-content'}`}  
+            width={size === 'sm' ? '16' : size === 'lg' ? '28' : '24' } 
+            height={size === 'sm' ? '16' : size === 'lg' ? '28' : '24' }  
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox={`0 0 24 24`}
+            fill="none"
             >
                 <path 
-                    style={{ display: 'block', margin: 'auto' }}
+                    className={`block m-auto`}
                     fill-rule="evenodd" 
                     clip-rule="evenodd" 
                     d={getIcon()} 
-                    fill={color}
+                    fill={`${color}`}
                 />
-            </svg>
+        </svg>
         
     )
 }

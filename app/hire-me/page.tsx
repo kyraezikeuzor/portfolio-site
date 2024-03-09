@@ -8,7 +8,7 @@ export default function() {
             <section className='flex flex-col gap-5 md:mx-[10vw]'>
                 <h1>Hire me!</h1>
                 <p>
-                    Hello
+                    Contact me at <b>kyraezikeuzor@gmail.com</b>
                 </p>
             </section>
         </main>
