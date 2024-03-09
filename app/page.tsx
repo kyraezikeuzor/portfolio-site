@@ -27,7 +27,7 @@ export default function Home() {
           <Link href='/hire-me' className='font-medium'>Hire Me ➝</Link>
         </div>
       </header>
-      <section className="flex flex-col md:flex-row justify-between gap-2 md:mx-[10vw]">
+      <section className="flex flex-col md:flex-row items-center justify-between gap-2 md:mx-[10vw]">
         <div className='w-full md:w-3/5 flex flex-col gap-5'>
           <h2>A Bit About Me. </h2>
           <ul className='w-full flex flex-col gap-1'>
@@ -51,8 +51,8 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className='w-full md:w-2/5'>
-          <img className='w-full h-auto' src='/me-v1.png'/>
+        <div className='w-full md:w-2/5 items-center justify-center'>
+          <img className='w-full h-auto rounded-full' src='https://www.pewtrusts.org/-/media/post-launch-images/2022/11/gettyimages1198849037jpgmaster/1x1_s.jpg'/>
         </div>
       </section>
       <section className='flex flex-col gap-5 md:mx-[10vw]'>
