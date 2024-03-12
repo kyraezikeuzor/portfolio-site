@@ -7,7 +7,7 @@ import Logo from './Logo'
 export default function Navbar() {
 
     return (
-        <nav className='flex z-50 sticky top-5 flex-row justify-between items-center px-[5vw] py-4 shadow-sm backdrop-blur bg-[--clr-base]/50 border-y border-[--clr-base-accent]'>
+        <nav className='flex z-50 sticky top-0 flex-row justify-between items-center px-[5vw] py-2 shadow-sm backdrop-blur bg-[--clr-base]/50 border-y border-[--clr-base-accent]'>
             <Logo/>
             <ul className='flex flex-row items-center gap-2 font-medium'>
                 {/*<li>
