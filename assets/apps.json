@@ -14,7 +14,7 @@
     {
         "name":"Cadmus",
         "description":"A dyslexia-focused Chrome extension for internet accessibility developed for the 2024 MIT Blueprint Hackathon.",
-        "stack":["HTML","Vanilla CSS","JavaScript","Open AI APi","Flask","RESTFUL API"],
+        "stack":["HTML","Vanilla CSS","JavaScript","Open AI API","Flask","RESTFUL API"],
         "url":"https://github.com/jromerooo2/dyslexia-extension"
     },
     {
