@@ -9,7 +9,7 @@ import Icon from './Icon'
 
 function Footer() {
   return (
-    <div className='px-[5vw] py-[8vh] flex flex-row justify-between items-center'>
+    <div className='flex flex-row justify-between items-center p-5 md:px-[10vw] lg:px-[20vw] py-2'>
         
         <div>
             <span className='font-medium'>Built with ❤️ by Kyra</span>

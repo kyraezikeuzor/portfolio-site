@@ -5,20 +5,19 @@ import Link from 'next/link'
 type PortfolioCardProps = {
     name:string;
     description:string;
-    src:string;
     stack:string[],
     url:string
 }
 
 
-const PortfolioCard = ({name,description,src,stack,url}:PortfolioCardProps) => {
+const PortfolioCard = ({name,description,stack,url}:PortfolioCardProps) => {
 
     return (
-        <div className='flex flex-col gap-4 rounded-lg border border-[--clr-base-accent] shadow-sm px-2 py-2'>
-            {/*<img src={src} className='w-full h-auto rounded-md shadow-sm border border-[--clr-base-accent]'/>*/}
+        <div className='flex flex-col gap-4 rounded-lg border-2 border-[--clr-base-accent] shadow-sm px-2 py-2'>
+            
             <div className='flex flex-col gap-2 px-3 py-2'>
                 <h4 className='text-lg'>
-                    <Link className='hover:text-[--clr-grey-base] hover:fill-[--clr-grey-base]' href={url}>{name} <Icon icon="ArrowTopRight" size='sm'/></Link>
+                    <Link target='_blank' className='hover:text-[--clr-grey-base] hover:fill-[--clr-grey-base]' href={url}>{name} <Icon icon="ArrowTopRight" size='sm'/></Link>
                 </h4>
                 <p className='text-sm md:text-sm'>
                     {description}
@@ -31,6 +30,7 @@ const PortfolioCard = ({name,description,src,stack,url}:PortfolioCardProps) => {
                     ))}
                 </div>
             </div>
+
         </div>
     )
 }

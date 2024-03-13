@@ -2,28 +2,24 @@
     {
         "name":"Sedge",
         "description":"A platform for finding academic and professional opportunities.",
-        "src":"/portfolio-img2.png",
         "stack":["ReactJS","NextJS","TypeScript","TailwindCSS"],
         "url":"https://scholar-vine.vercel.app/"
     },
     {
         "name":"RecipeAI",
         "description":"A web app that uses AI to modify recipes to fit your dietary restrictions.",
-        "src":"/portfolio-img2.png",
         "stack":["ReactJS","NextJS","TypeScript","Vanilla CSS","NodeJS"],
         "url":"https://recipe-ai-app.vercel.app/"
     },
     {
         "name":"SearchMoji",
         "description":"A web app for quickly sourcing and capturing emojis.",
-        "src":"/portfolio-img2.png",
         "stack":["HTML","Vanilla CSS","JavaScript"],
-        "url":"https://kyraezikeuzor.github.io/SearchMoji/"
+        "url":"https://kyraezikeuzor.github.io/searchmoji/"
     },
     {
         "name":"Compute the Future Foundation Website",
         "description":"A website for the computer science and education nonprofit Compute the Future Foundation.",
-        "src":"/portfolio-img2.png",
         "stack":["ReactJS","NextJS","TypeScript","Vanilla CSS"],
         "url":"https://www.computefutures.org/"
     }
