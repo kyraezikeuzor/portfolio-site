@@ -43,7 +43,7 @@ export default function Home() {
         
         <div className='flex flex-row flex-wrap gap-2'>
           {TECHSTACK.map((item,index)=>(
-            <div key={index} className='flex flex-col gap-2 items-center rounded-2xl border border-[--clr-base-accent] px-4 py-4'>
+            <div key={index} className='flex flex-col gap-2 items-center rounded-2xl border-2 border-[--clr-base-accent] px-4 py-4'>
               <img src={item.src} className='w-auto h-16'/>
               <div className='font-medium'>
                 {item.name}
