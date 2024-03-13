@@ -16,10 +16,10 @@ export default function Navbar() {
                 <li>
                     <Logo/>
                 </li>
-                <li className={`border-2 border-[--clr-base-accent] px-4 py-1 rounded-lg`}>
+                <li className={`${pathname === '/about-me' ? 'bg-[--clr-grey-light]' : ''}  border-2 border-[--clr-base-accent] px-4 py-1 rounded-lg`}>
                     <Link href='/about-me'>About</Link>
                 </li>
-                <li className='border-2 border-[--clr-base-accent] px-4 py-1 rounded-lg'>
+                <li className={`${pathname === '/projects' ? 'bg-[--clr-grey-light]' : ''} border-2 border-[--clr-base-accent] px-4 py-1 rounded-lg`}>
                     <Link href='/projects'>Projects</Link>
                 </li>
             </ul>
