@@ -25,7 +25,7 @@ export default function Home() {
         </h1>
 
         <p className='text-base md:text-lg'>
-          I'm a junior in high school and developer who makes open-source projects focused on student life, medicine, and science. Welcome to my digital garden. 🌱
+          I&apos;m a junior in high school and developer who makes open-source projects focused on student life, medicine, and science. Welcome to my digital portfolio. 🌱
         </p>
 
         <div className='flex flex-row gap-3 items-center'>

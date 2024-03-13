@@ -17,7 +17,7 @@ export default function HireMe() {
                 <h1 className='tracking-tighter font-bold text-5xl md:text-6xl'>Hire me!</h1>
                 <p className='text-base md:text-lg'>
                     Hire me to build your websites or web apps or other software projects. I have 3+ years of extensive experience in web development. 
-                    Along with other projects, I've built websites for nonprofits and other institutions.
+                    Along with other projects, I&apos;ve built websites for nonprofits and other institutions.
                 </p>
                 <p className='text-base md:text-lg'>
                     Contact me at <Link  className='font-semibold' target="_top" href='mailto:kyraezikeuzor@gmail.com'>kyraezikeuzor@gmail.com</Link>
