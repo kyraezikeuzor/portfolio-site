@@ -5,7 +5,7 @@ import Icon from './Icon'
 
 const ThemeButton = () => {
 
-    const [showDarkMode, setShowDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
+    const [showDarkMode, setShowDarkMode] = useState(false)
     const [systemMode, setSystemMode] = useState('')
     
 
