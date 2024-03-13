@@ -4,26 +4,31 @@ import React, {useState, useEffect} from 'react'
 import Icon from './Icon'
 
 const ThemeButton = () => {
-    const [showDarkMode, setShowDarkMode] = useState(false)
+    const [showDarkMode, setShowDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
     const [systemMode, setSystemMode] = useState('')
+    const [theme, setTheme] = useState()
 
     useEffect(()=>{
         
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
-            setSystemMode('dark')
-        } else {
-            setSystemMode('light')
-        }
+    })
 
-        const themeVariable = systemMode === 'light' ? 'dark' : 'light'
+    useEffect(()=>{
         
-        document.documentElement.classList.toggle(themeVariable, showDarkMode);
-    }, [showDarkMode])
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches && showDarkMode == false) {
+            document.documentElement.classList.toggle('dark', false);
+        } else {
+            document.documentElement.classList.toggle('dark', showDarkMode);
+        }
+        
+
+    })
+
 
     useEffect(()=>{
         const data = window.localStorage.getItem('SCHOLARVINE_APP_THEME');
         if (data != null) setShowDarkMode(JSON.parse(data))
     }, [])
+
 
     useEffect(()=>{
         window.localStorage.setItem('SCHOLARVINE_APP_THEME', JSON.stringify(showDarkMode))
